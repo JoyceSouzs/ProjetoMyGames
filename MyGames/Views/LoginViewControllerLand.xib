@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewControllerLand" customModule="MyGames" customModuleProvider="target">
+            <connections>
+                <outlet property="imgView" destination="ewM-OO-AAP" id="HtY-Oa-zia"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qFN-DW-AWY">
+                    <rect key="frame" x="347" y="78.5" width="2" height="236"/>
+                    <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="2" id="BFQ-yf-IAK"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="perfil" translatesAutoresizingMaskIntoConstraints="NO" id="ewM-OO-AAP">
+                    <rect key="frame" x="149" y="113.5" width="166" height="166"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="ewM-OO-AAP" secondAttribute="height" multiplier="1:1" id="2IP-4b-fwm"/>
+                        <constraint firstAttribute="width" constant="166" id="mEh-gW-uvB"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V6H-xi-gHB">
+                    <rect key="frame" x="388" y="137.5" width="448" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZNd-mZ-prZ">
+                    <rect key="frame" x="388" y="179.5" width="448" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pEF-vC-1Hk">
+                    <rect key="frame" x="388" y="249" width="450" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="Logar">
+                        <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </state>
+                    <connections>
+                        <action selector="logar:" destination="-1" eventType="touchUpInside" id="Y97-px-0kV"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ZNd-mZ-prZ" firstAttribute="top" secondItem="V6H-xi-gHB" secondAttribute="bottom" constant="8" id="2ac-X4-sh4"/>
+                <constraint firstItem="ZNd-mZ-prZ" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="GaG-2Z-5jr"/>
+                <constraint firstItem="V6H-xi-gHB" firstAttribute="centerX" secondItem="ZNd-mZ-prZ" secondAttribute="centerX" id="KeT-yO-f1r"/>
+                <constraint firstItem="V6H-xi-gHB" firstAttribute="leading" secondItem="qFN-DW-AWY" secondAttribute="trailing" constant="39" id="Lxy-tO-FTP"/>
+                <constraint firstItem="qFN-DW-AWY" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" constant="-100" id="SgV-3c-udP"/>
+                <constraint firstItem="V6H-xi-gHB" firstAttribute="width" secondItem="ZNd-mZ-prZ" secondAttribute="width" id="TbK-1E-xFa"/>
+                <constraint firstItem="pEF-vC-1Hk" firstAttribute="top" secondItem="ZNd-mZ-prZ" secondAttribute="bottom" constant="35.5" id="acD-VB-WAn"/>
+                <constraint firstItem="ewM-OO-AAP" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="dWa-GO-MFu"/>
+                <constraint firstItem="pEF-vC-1Hk" firstAttribute="width" secondItem="V6H-xi-gHB" secondAttribute="width" multiplier="0.102679" constant="404" id="k0Q-ca-Y44"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="V6H-xi-gHB" secondAttribute="trailing" constant="16" id="kGN-tg-4Cy"/>
+                <constraint firstItem="pEF-vC-1Hk" firstAttribute="centerX" secondItem="ZNd-mZ-prZ" secondAttribute="centerX" constant="1" id="p1y-bl-wji"/>
+                <constraint firstItem="qFN-DW-AWY" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="vNd-lF-4EP"/>
+                <constraint firstItem="qFN-DW-AWY" firstAttribute="leading" secondItem="ewM-OO-AAP" secondAttribute="trailing" constant="32" id="veu-GX-3Wf"/>
+                <constraint firstItem="qFN-DW-AWY" firstAttribute="height" secondItem="fnl-2z-Ty3" secondAttribute="height" multiplier="0.600509" id="w1g-RZ-g4a"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="114" y="123"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="perfil" width="500" height="368"/>
+    </resources>
+</document>
